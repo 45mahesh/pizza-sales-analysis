@@ -159,7 +159,9 @@ pizza-sales-analysis/
 
 │
 ├── data/
+
 │   ├── raw/                 # original CSV files
+
 │   └── processed/           # cleaned/transformed data 
 │
 ├── sql/
