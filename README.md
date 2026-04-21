@@ -156,45 +156,42 @@ Includes pizza names, categories, and ingredients.
 ## 📁 Project Structure
 
 pizza-sales-analysis/
-
 │
 ├── data/
-
 │   ├── raw/                 # original CSV files
-
-│   └── processed/           # cleaned/transformed data 
+│   └── processed/           # cleaned/transformed data (optional)
 │
 ├── sql/
 │   ├── schema.sql           # table creation
-│   ├── data\_import.sql      # loading CSVs
+│   ├── data_import.sql      # loading CSVs
 │   └── analysis.sql         # business queries
 │
 ├── notebooks/               # Jupyter notebooks (Python analysis)
-│   └── exploratory\_analysis.ipynb
+│   └── exploratory_analysis.ipynb
 │
 ├── reports/
-│   ├── insights.md          # business insights 
-│   └── summary.pdf          # final report
+│   ├── insights.md          # business insights (VERY IMPORTANT)
+│   └── summary.pdf          # optional final report
 │
 ├── dashboards/              # visuals/screenshots
 │   └── charts/
 │
 ├── outputs/
-│   ├── query\_results/       # exported results (CSV/screenshots)
-│   └── logs/                
+│   ├── query_results/       # exported results (CSV/screenshots)
+│   └── logs/                # optional
 │
 ├── docs/
-│   ├── ER\_diagram.png
-│   └── data\_dictionary.md   # explains columns 
+│   ├── ER_diagram.png
+│   └── data_dictionary.md   # explain columns (🔥 pro level)
 │
-├── scripts/                 # automation 
-│   └── data\_cleaning.py
+├── scripts/                 # automation (optional but impressive)
+│   └── data_cleaning.py
 │
-├── config/                  # configs 
+├── config/                  # configs (optional)
 │   └── settings.yaml
 │
-├── tests/                   # 
-│   └── test\_queries.sql
+├── tests/                   # (optional, mostly for show but useful)
+│   └── test_queries.sql
 │
 ├── .gitignore
 ├── requirements.txt
