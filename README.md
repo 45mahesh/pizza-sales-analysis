@@ -155,47 +155,41 @@ Includes pizza names, categories, and ingredients.
 
 ## 📁 Project Structure
 
+## 📁 Project Structure
+
+```text
 pizza-sales-analysis/
-│
 ├── data/
 │   ├── raw/                 # original CSV files
-│   └── processed/           # cleaned/transformed data (optional)
-│
+│   └── processed/           # cleaned/transformed data 
 ├── sql/
 │   ├── schema.sql           # table creation
 │   ├── data_import.sql      # loading CSVs
 │   └── analysis.sql         # business queries
-│
 ├── notebooks/               # Jupyter notebooks (Python analysis)
 │   └── exploratory_analysis.ipynb
-│
 ├── reports/
-│   ├── insights.md          # business insights (VERY IMPORTANT)
-│   └── summary.pdf          # optional final report
-│
+│   ├── insights.md          # business insights 
+│   └── summary.pdf          # final report
 ├── dashboards/              # visuals/screenshots
 │   └── charts/
-│
 ├── outputs/
 │   ├── query_results/       # exported results (CSV/screenshots)
-│   └── logs/                # optional
-│
+│   └── logs/                
 ├── docs/
 │   ├── ER_diagram.png
-│   └── data_dictionary.md   # explain columns (🔥 pro level)
-│
-├── scripts/                 # automation (optional but impressive)
+│   └── data_dictionary.md   # explains columns
+├── scripts/                 # automation 
 │   └── data_cleaning.py
-│
-├── config/                  # configs (optional)
+├── config/                  # configs 
 │   └── settings.yaml
-│
-├── tests/                   # (optional, mostly for show but useful)
+├── tests/                   
 │   └── test_queries.sql
-│
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
+
 
 
 ---
