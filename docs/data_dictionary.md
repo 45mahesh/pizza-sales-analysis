@@ -1,18 +1,8 @@
-\# Data Dictionary – Pizza Sales Project
+\# 📘 Data Dictionary
 
 
 
-\## 1. orders
-
-| Column Name | Description |
-
-|------------|------------|
-
-| order\_id | Unique identifier for each order |
-
-| date | Date when the order was placed |
-
-| time | Time when the order was placed |
+This document describes the structure and meaning of each dataset used in the project.
 
 
 
@@ -20,19 +10,19 @@
 
 
 
-\## 2. order\_details
+\## 🗂 orders
+
+
 
 | Column Name | Description |
 
 |------------|------------|
 
-| order\_details\_id | Unique identifier for each order line |
+| order\_id   | Unique identifier for each order |
 
-| order\_id | Foreign key linking to orders table |
+| order\_date | Date when the order was placed |
 
-| pizza\_id | Foreign key linking to pizzas table |
-
-| quantity | Number of pizzas ordered |
+| order\_time | Time when the order was placed |
 
 
 
@@ -40,19 +30,43 @@
 
 
 
-\## 3. pizzas
+\## 🗂 order\_details
 
-| Column Name | Description |
 
-|------------|------------|
 
-| pizza\_id | Unique pizza identifier (includes size) |
+| Column Name       | Description |
+
+|------------------|------------|
+
+| order\_details\_id | Unique identifier for each order item |
+
+| order\_id         | Foreign key linking to orders table |
+
+| pizza\_id         | Identifier for the pizza ordered |
+
+| quantity         | Number of pizzas ordered |
+
+
+
+\---
+
+
+
+\## 🗂 pizzas
+
+
+
+| Column Name    | Description |
+
+|---------------|------------|
+
+| pizza\_id      | Unique identifier for each pizza |
 
 | pizza\_type\_id | Links to pizza\_types table |
 
-| size | Size of pizza (S, M, L, XL, XXL) |
+| size          | Size of pizza (S, M, L, etc.) |
 
-| price | Price of the pizza |
+| price         | Price of the pizza |
 
 
 
@@ -60,17 +74,35 @@
 
 
 
-\## 4. pizza\_types
+\## 🗂 pizza\_types
 
-| Column Name | Description |
 
-|------------|------------|
 
-| pizza\_type\_id | Unique identifier for pizza category |
+| Column Name    | Description |
 
-| name | Full name of the pizza |
+|---------------|------------|
 
-| category | Type (Classic, Chicken, Veggie, Supreme) |
+| pizza\_type\_id | Unique identifier for pizza type |
 
-| ingredients | Ingredients used in the pizza |
+| name          | Name of the pizza |
+
+| category      | Category (Classic, Veggie, Chicken, Supreme) |
+
+| ingredients   | Ingredients used in the pizza |
+
+
+
+\---
+
+
+
+\## 🔗 Relationships
+
+
+
+\- orders → order\_details (1 to many)
+
+\- pizzas → order\_details (1 to many)
+
+\- pizza\_types → pizzas (1 to many)
 
