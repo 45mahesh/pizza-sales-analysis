@@ -148,7 +148,7 @@ pizza-sales-analysis/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
-
+```
 
 ## ▶️ How to Run the Project
 1. Import CSV files into your SQL database
