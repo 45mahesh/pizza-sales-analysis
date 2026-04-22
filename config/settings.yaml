@@ -1,0 +1,15 @@
+data_paths:
+  raw_data: data/raw/
+  processed_data: data/processed/
+
+database:
+  name: pizza_sales
+  tables:
+    - orders
+    - order_details
+    - pizzas
+    - pizza_types
+
+analysis:
+  top_n_products: 5
+  currency: USD
